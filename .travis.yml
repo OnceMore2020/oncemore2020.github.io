@@ -1,0 +1,26 @@
+rvm:
+- 2.2
+python:
+- "3.5"
+before_install:
+- openssl aes-256-cbc -K $encrypted_a279b8902973_key -iv $encrypted_a279b8902973_iv
+  -in gh_deploy.enc -out ~/.ssh/gh_deploy -d
+- chmod 600 ~/.ssh/gh_deploy
+- eval "$(ssh-agent -s)"
+- ssh-add ~/.ssh/gh_deploy
+- git config --global user.name "Travis Bot"
+- git config --global user.email guanhwang2011@gmail.com
+- cd ~
+- git clone --depth=50 --branch=dev git@github.com:OnceMore2020/oncemore2020.github.io.git blogbuild
+- cd blogbuild
+- gem install github-pages
+- npm install gitbook-cli -g
+script:
+- python compile.py
+after_success:
+- git add --all
+- git commit -m ":black_nib:Updated By Travis"
+- git push -u origin HEAD:master --force
+branches:
+  only:
+  - dev

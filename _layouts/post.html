@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  {% include head.html %}
+</head>
+  {% include nav.html %}
+<body id="post-context">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 hidden-xs">
+        <div id="toc"></div>
+      </div>
+      <div class="col-sm-7 col-xs-12">
+        <h1>{{ page.title }}</h1>
+        <small>Last Updated At: {{ page.modified|date:"%Y-%m-%d" }}</small>
+        <hr>
+        <article>
+        {{ content }}
+        </article>
+        <hr>
+        <div id="disqus_thread" class="cmt"></div>
+      </div>
+    </div>
+  </div>
+</body>
+  {% include scripts.html %}
+<script>
+  var disqus_config = function () {
+    this.page.url = "{{ site.url }}{{ page.url }}"; // <--- use canonical URL
+    this.page.identifier = "{{ page.id }}";
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://oncemore2020.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<script src="//cdn.bootcss.com/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
+<script>
+  $(function() {
+      var toc = $("#toc").tocify({
+      selectors: "h2, h3, h4"
+    }).data("toc-tocify");
+    $(".optionName").popover({
+      trigger: "hover"
+    });
+  });
+</script>
+<style>
+#post-context a {
+  color: black;
+}
+.active {
+  background-color: #333333;
+}
+#toc .active a {
+  color: white;
+}
+#toc .active a:hover {
+  background-color: #333333;
+}
+</style>
+</html>

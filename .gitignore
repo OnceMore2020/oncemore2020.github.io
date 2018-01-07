@@ -1,0 +1,9 @@
+_site/
+*.out
+.vscode
+_book
+.jekyll-metadata
+.sass-cache
+upload2qn.py
+.DS_Store
+.ropeproject

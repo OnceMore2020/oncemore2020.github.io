@@ -1,0 +1,53 @@
+---
+layout: default
+title: Ruminations
+---
+
+<div id="app" class="container-fluid">
+  <div id="jekyllData" style="display:none">
+    {{ site.data.featured_quotes | jsonify }}
+  </div>
+  {% raw %}
+  <div class="jumbotron" >
+    <p class="lead text-center">"{{ quote }}"</p>
+    <p class="text-right"><small>{{ quoteby }}</small></p>
+  </div>
+  {% endraw %}
+</div>
+<div class="container">
+  <div>
+    {% for book in site.data.ruminations.entry %}
+      <a href="/ruminations/{{ book.id }}">
+        <h4>{{ book.title }}<small>{{ book.author }}</small></h4>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+<script>
+  var featureList = JSON.parse($('#jekyllData').text()).entry;
+  var vm = new Vue({
+    el: '#app',
+    data: {
+      features: featureList
+    },
+    computed: {
+      idx: function () {
+        return Math.floor(Math.random() * this.features.length)
+      },
+      quote: function () {
+        return this.features[this.idx].quote
+      },
+      quoteby: function () {
+        return this.features[this.idx].quoteby
+      }
+    }
+  })
+</script>
+
+<style>
+.jumbotron {
+  background-color: #ffffcc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+</style>

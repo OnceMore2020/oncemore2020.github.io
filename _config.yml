@@ -1,0 +1,27 @@
+name: OncePages
+description: A life-tech blog
+url:   https://oncemore2020.github.io
+
+qnurl: https://omjqdrs7d.qnssl.com
+owner:
+  name: OnceMore2020
+  weibo: 2615146412
+
+plugins:
+  - jekyll-sitemap
+
+permalink:   /:categories/:title/
+incremental: false
+excerpt_separator: ""
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false

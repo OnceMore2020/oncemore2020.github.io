@@ -1,0 +1,91 @@
+---
+layout: blog
+title: Archive
+---
+
+<div class="container">
+  <div id="postList" style="display:none;">
+    {% for post in site.posts %}"{{ post.url }}",{% endfor %}
+  </div>
+  <div class="row" id="app">
+    <div class="col-md-9 col-xs-12">
+      <div class="panel-group">
+        {% for tag in site.tags %}
+          {% assign tagstr = tag | first %}
+          {% assign tagposts = tag | last %}
+          <div class="panel" id="tag{{ forloop.index }}">
+            <div class="panel-heading">
+              <a data-toggle="collapse" href="#tagContent{{ forloop.index }}">
+                {{ tagstr }}=[collection of {{ tagposts | size }} post(s)]
+              </a>
+            </div>
+            <div class="panel-collapse collapse" id="tagContent{{ forloop.index }}">
+              <ul class="list-group">
+              {% for post in site.posts %}
+              {% if post.tags contains tagstr %}
+                <li class="list-group-item">
+                  <span class="badge">{{ post.modified }}</span>
+                  <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                </li>
+              {% endif %}
+              {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12 sidenav" style="margin-top:10px;">
+      <p>扫一扫移动端阅读</p>
+      <div id="qrcode"></div>
+      <hr>
+      <a class="btn btn-default" href="/feed.xml">RSS</a>
+      <a class="btn btn-default" :href="randPost">运气不错</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('#qrcode').qrcode({
+      width: 196,
+      height: 196,
+      text: "http://oncemore2020.github.io/blog"
+    });
+  });
+  var postsList = $('#postList').text().split(',')
+  var vm = new Vue({
+    el: '#app',
+    data: {
+      posts: postsList
+    },
+    computed: {
+      randPost: function () {
+        var randomIndex = Math.floor(Math.random() * this.posts.length)
+        var postName = this.posts[randomIndex]
+        return postName.substr(1, postName.length - 2)
+      }
+    }
+  })
+</script>
+<style>
+.sidenav {
+    text-align: center;
+}
+.btn {
+  border: 1px solid;
+  color: black;
+}
+a {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
+.badge {
+  background-color: black;
+}
+.panel {
+  border: 1px solid;
+}
+</style>
