@@ -2,7 +2,7 @@
 layout: post
 title: "TensorFlow上手"
 modified: 2015-11-10
-feature: tensorflow.jpg
+feature: false
 description: tensorflow 不负责任胡扯试水贴
 tags: [Machine Learning]
 ---

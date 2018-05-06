@@ -2,8 +2,7 @@
 layout: post
 title: Qt Installer Framework 制作安装包
 modified: 2016-09-13
-hidden: fasle
-feature: qt.png
+feature: false
 tags: [Valyria Steel]
 description: 使用 Qt Installer Framework 部署你的程序。
 ---

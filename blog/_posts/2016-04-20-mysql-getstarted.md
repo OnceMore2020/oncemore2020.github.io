@@ -3,7 +3,7 @@ layout: post
 title: MySQL 快速上手
 modified: 2016-04-25
 hidden: true
-feature: mysql.png
+feature: false
 tags: [Database]
 description: 从基础概念介绍到安装配置和使用，快速上手 MySQL。
 ---

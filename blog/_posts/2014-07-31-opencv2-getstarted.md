@@ -3,7 +3,7 @@ layout: post
 title: 快速上手 OpenCV
 modified: 2014-07-31
 description: 介绍如何使用 CMake 快速配置 OpenCV 工程。
-feature: true
+feature: false
 tags: [CV]
 ---
 

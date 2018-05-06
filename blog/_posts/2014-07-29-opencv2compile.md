@@ -2,7 +2,7 @@
 layout: post
 title: 编译安装 OpenCV2
 modified: 2014-07-29
-feature: true
+feature: false
 description: 在 Ubuntu 下编译安装 OpenCV 2.4.x 版本
 tags: [CV]
 ---

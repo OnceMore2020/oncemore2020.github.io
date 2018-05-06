@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 记一次奇怪的服务器“事故”
-modified: 2017-03-31 15:07:46
+modified: 2017-03-31
 feature: true
 tags: [Fun]
 description: 一次匪夷所思到触动了大家的被迫害妄想症的服务器事故。

@@ -3,7 +3,7 @@ layout: post
 title: OpenCV2 基础操作
 modified: 2017-03-29
 description: 关于 OpenCV 运算库的一些基础知识。
-feature: true
+feature: false
 tags: [CV]
 ---
 

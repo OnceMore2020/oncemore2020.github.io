@@ -17,7 +17,6 @@ before_install:
 - gem install github-pages
 - npm install gitbook-cli -g
 script:
-- cd blogbuild
 - jekyll build
 after_success:
 - git add --all
