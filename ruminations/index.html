@@ -3,42 +3,45 @@ layout: default
 title: Ruminations
 ---
 
-<div id="app" class="container-fluid">
+<div id="app" class="container">
   <div id="jekyllData" style="display:none">
     {{ site.data.featured_quotes | jsonify }}
   </div>
   {% raw %}
-  <div class="jumbotron" >
-    <p class="lead text-center">"{{ quote }}"</p>
-    <p class="text-right"><small>{{ quoteby }}</small></p>
-  </div>
+    <div class="jumbotron">
+      <p class="lead text-left">{{ quote }}</p>
+      <hr/>
+      <p class="text-right"><small>{{ quoteby }},</small></p>
+      <p class="text-right"><small>{{ book }}</small></p>
+    </div>
+    <ul class="pager">
+      <li><a v-on:click="updateIdx" href="#">Next</a></li>
+    </ul>
   {% endraw %}
-</div>
-<div class="container">
-  <div>
-    {% for book in site.data.ruminations.entry %}
-      <a href="/ruminations/{{ book.id }}">
-        <h4>{{ book.title }}<small>{{ book.author }}</small></h4>
-      </a>
-    {% endfor %}
-  </div>
 </div>
 <script>
   var featureList = JSON.parse($('#jekyllData').text()).entry;
+  var initialIdx = Math.floor(Math.random() * featureList.length)
   var vm = new Vue({
     el: '#app',
     data: {
-      features: featureList
+      features: featureList,
+      idx: initialIdx
     },
     computed: {
-      idx: function () {
-        return Math.floor(Math.random() * this.features.length)
-      },
       quote: function () {
         return this.features[this.idx].quote
       },
       quoteby: function () {
         return this.features[this.idx].quoteby
+      },
+      book: function () {
+        return this.features[this.idx].book
+      }
+    },
+    methods: {
+      updateIdx: function () {
+        this.idx = Math.floor(Math.random() * this.features.length)
       }
     }
   })
