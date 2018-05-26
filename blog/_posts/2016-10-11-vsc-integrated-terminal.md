@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Visual Studio Code 集成终端
-modified: 2016-10-10
-hidden: false
-feature: vscode.png
+modified: 2018-05-27
+feature: true
 tags: [Valyria Steel]
 description: 使用 Visual Studio Code 的集成终端功能快速地在编辑器中调出终端
 ---
