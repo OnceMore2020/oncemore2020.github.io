@@ -18,7 +18,7 @@ TensorFlow在Github上的地址是[tensorflow/tensorflow](https://github.com/ten
 
 ## 游戏名目
 
-![tf00]({{ site.qnurl }}/media/tf-gs/tf00.gif){:.img-responsive}
+![tf00]({{ site.qnurl }}/media/tf-gs/tf00.gif){:.img-fluid}
 
 数据流图用 **有向图(directed graph)** 中的 **节点(nodes)** 和 **连线(edges)** 来描述数学运算，节点表示数学运算，或是输入数据和运算结果的I/O；连线描述节点之间的I/O，承载 **动态多维数据阵列(dynamically-sized multidimensional data arrays)**, 开发人员称为 **Tensors**。TensorFlow的起名也来源于此。节点可以分配或部署给承载了计算资源的设备，进行异步并行计算。
 

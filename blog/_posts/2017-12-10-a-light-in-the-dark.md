@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 加班时，记得为家里的她点亮一盏灯
-modified: 2017-12-10 14:11:02
+modified: 2017-12-10
 feature: true
 tags: [Everglow]
 description: The night is dark and full of terrors, but love burns them all away.
@@ -17,15 +17,15 @@ description: The night is dark and full of terrors, but love burns them all away
 
 ### 连线
 
-![]({{ site.qnurl }}/media/ir_light_ctrl/ir_sensor.png){:.img-responsive .img-rounded}
+![]({{ site.qnurl }}/media/ir_light_ctrl/ir_sensor.png){:.img-fluid .rounded .mx-auto .d-block}
 
 红外感应模块的 VCC 连接树莓派 3.3V 针脚，GND 连接 GROUND 针脚，REL 连接 GPIO 3 号针脚（物理编号）。树莓派的 GPIO 针脚编号分为 _GPIO编号_ 和 _物理编号_ 两种，这里使用物理编号，即 REL 连接 5 号针脚。
 
-![]({{ site.qnurl }}/media/ir_light_ctrl/physical-numbers.png){:.img-responsive .img-rounded}
+![]({{ site.qnurl }}/media/ir_light_ctrl/physical-numbers.png){:.img-fluid .rounded .mx-auto .d-block}
 
 装饰灯连接树莓派的 USB 端口 2
 
-![]({{ site.qnurl }}/media/ir_light_ctrl/rasp_usb_port.jpg){:.img-responsive .img-rounded}
+![]({{ site.qnurl }}/media/ir_light_ctrl/rasp_usb_port.jpg){:.img-fluid .rounded .mx-auto .d-block}
 
 ### 程序控制
 
@@ -76,6 +76,6 @@ if __name__ == '__main__':
 
 动图为开门后，自动触发装饰灯点亮的效果图
 
-![]({{ site.qnurl }}/media/ir_light_ctrl/light_on.gif){:.img-responsive .img-rounded}
+![]({{ site.qnurl }}/media/ir_light_ctrl/light_on.gif){:.img-fluid .rounded .mx-auto .d-block}
 
 > The night is dark and full of terrors, but love burns them all away.

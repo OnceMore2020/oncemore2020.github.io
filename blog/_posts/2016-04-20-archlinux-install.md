@@ -16,19 +16,19 @@ description: Archlinux 是最好的 Linux 发行版，并且安装和使用 Arch
 
 * 若在虚拟机中(如VirtualBox)安装，直接从虚拟机引导ISO镜像即可进入安装界面。
 
-![04.PNG]({{ site.qnurl }}/media/arch-install/04.PNG){:.img-responsive}
+![04.PNG]({{ site.qnurl }}/media/arch-install/04.PNG){:.img-fluid}
 
 ### 附：VirtualBox 设置
 
 建议设置桥接网卡，这样虚拟机内的系统可以获得一个和宿主机独立的IP地址，方便远程ssh登录。建议启用EFI。
 
-![00.PNG]({{ site.qnurl }}/media/arch-install/00.PNG){:.img-responsive}
+![00.PNG]({{ site.qnurl }}/media/arch-install/00.PNG){:.img-fluid}
 
-![01.PNG]({{ site.qnurl }}/media/arch-install/01.PNG){:.img-responsive}
+![01.PNG]({{ site.qnurl }}/media/arch-install/01.PNG){:.img-fluid}
 
-![02.PNG]({{ site.qnurl }}/media/arch-install/02.PNG){:.img-responsive}
+![02.PNG]({{ site.qnurl }}/media/arch-install/02.PNG){:.img-fluid}
 
-![020.PNG]({{ site.qnurl }}/media/arch-install/020.PNG){:.img-responsive}
+![020.PNG]({{ site.qnurl }}/media/arch-install/020.PNG){:.img-fluid}
 
 ## 开始之前
 
@@ -323,7 +323,7 @@ $ VBoxClient-all
 
 首先在 Virtualbox 中给Archlinux分配共享文件夹，如宿主机上的整个分区
 
-![06.PNG]({{ site.qnurl }}/media/arch-install/06.PNG){:.img-responsive}
+![06.PNG]({{ site.qnurl }}/media/arch-install/06.PNG){:.img-fluid}
 
 然后在Archlinux中输入
 

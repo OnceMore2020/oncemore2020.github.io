@@ -40,9 +40,9 @@ Windows 上可以使用这些选项更改默认的集成终端，如 64 位的CM
 
 在编辑器中选定的字体，可以通过 **Terminal:Run Selected Text in Active Terminal** 命令使其在集成终端中运行！
 
-![](https://code.visualstudio.com/images/integrated-terminal_terminal_run_selected.png){:.img-responsive}
+![](https://code.visualstudio.com/images/integrated-terminal_terminal_run_selected.png){:.img-fluid}
 
-![](https://code.visualstudio.com/images/integrated-terminal_terminal_run_selected_result.png){:.img-responsive}
+![](https://code.visualstudio.com/images/integrated-terminal_terminal_run_selected_result.png){:.img-fluid}
 
 ## 参考链接
 

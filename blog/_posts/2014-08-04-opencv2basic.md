@@ -13,7 +13,7 @@ tags: [CV]
 
 将获取的图像转码到数字设备时，采用一张数表(矩阵)来存储图像的每一像素强度[^stdmat]。如下图所示，每个位置的数字表示当前位置的像素强度。
 
-![Mat Demo]({{ site.qnurl }}/media/opencv2basic/mat.jpg){:.img-responsive .img-rounded}
+![Mat Demo]({{ site.qnurl }}/media/opencv2basic/mat.jpg){:.img-fluid .rounded .mx-auto .d-block}
 
 [^stdmat]: OpenCV2 的 `cv::Mat` 支持标准 I/O，可读入一副图像到 `image` 变量，然后使用 `std::cout << image << endl;` 一探究竟。
 

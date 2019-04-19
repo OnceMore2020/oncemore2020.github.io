@@ -506,7 +506,7 @@ int main(char argc, char** argv)
 使用 Visual Studio 打开 `build` 目录中的 `solution.sln`，点击 `Ctrl+F5` 不调试运行或 `F5` 调试运行，若配置成功，将显示一个生成的球状点云，如下图所示
 
 
-![test_vs]({{ site.qnurl }}/media/pcl-compile/test_vs.png){: .img-responsive}
+![test_vs]({{ site.qnurl }}/media/pcl-compile/test_vs.png){: .img-fluid}
 
 **Qt**
 
@@ -640,7 +640,7 @@ int main(int argc, char *argv[])
 执行 **构建 \| 执行 qmake**， 然后 **构建 \| 运行** 运行程序，如下图所示：
 
 
-![test_vs]({{ site.qnurl }}/media/pcl-compile/test_qt.png){: .img-responsive}
+![test_vs]({{ site.qnurl }}/media/pcl-compile/test_qt.png){: .img-fluid}
 
 如果测试没有问题，说明编译生成的程序库都是可用的。
 

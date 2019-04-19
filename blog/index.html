@@ -9,25 +9,24 @@ title: Featured Posts
   </div>
   <div class="row" id="app">
     <div class="col-md-9 col-xs-12">
-      <div class="list-group">
-        {% for post in site.posts %}
-          {% if post.feature %}
-            <li class="list-group-item">
-              <a href="{{ site.url }}{{ post.url }}">
-                <h4 class="list-group-item-heading">{{ post.title }}</h4>
-                <p class="list-group-item-text">{{ post.description }}</p>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </div>
+      {% for post in site.posts %}
+        {% if post.feature %}
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ post.title }}</h5>
+              <hr>
+              <p class="list-group-item-text">{{ post.description }}<a href="{{ site.url }}{{ post.url }}"> 阅读全文</a></p>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
     <div class="col-md-3 col-xs-12 sidenav" style="margin-top:10px;">
       <p>扫一扫移动端阅读</p>
       <div id="qrcode"></div>
       <hr>
-      <a class="btn" href="/feed.xml">RSS</a>
-      <a class="btn" :href="randPost">运气不错</a>
+      <a class="btn btn-dark btn-small" href="/feed.xml">RSS</a>
+      <a class="btn btn-dark btn-small" :href="randPost">运气不错</a>
     </div>
   </div>
 </div>
@@ -55,19 +54,3 @@ title: Featured Posts
     }
   })
 </script>
-<style>
-.sidenav {
-    text-align: center;
-}
-.btn {
-  border: 1px solid;
-  color: black;
-}
-.list-group a {
-  color: black;
-}
-.list-group a:hover {
-  text-decoration: none;
-  color: #0066ff;
-}
-</style>

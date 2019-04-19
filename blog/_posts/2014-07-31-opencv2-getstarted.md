@@ -82,11 +82,11 @@ make
 
 构建过程终端输出如图
 
-![CLI codes]({{ site.qnurl }}/media/opencv2-getstarted/code.png){:.img-responsive .img-rounded}
+![CLI codes]({{ site.qnurl }}/media/opencv2-getstarted/code.png){:.img-fluid .rounded .mx-auto .d-block}
 
 构建完成后则可以运行`./test`程序
 
-![CLI codes]({{ site.qnurl }}/media/opencv2-getstarted/out.png){:.img-responsive .img-rounded}
+![CLI codes]({{ site.qnurl }}/media/opencv2-getstarted/out.png){:.img-fluid .rounded .mx-auto .d-block}
 
 ## 总结
 

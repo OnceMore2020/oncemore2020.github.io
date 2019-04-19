@@ -92,7 +92,7 @@ $ rougify style monokai.sublime > assets/css/syntax.css
 
 并没有对 `highlighter-rouge` 类的 `<div></div>` 或是 `highlight` 类的 `<pre></pre>` 进行样式说明，这直接可能导致代码块的 `background-color` 属性被覆盖（如 Bootstrap），若是恰好被覆盖为浅色背景，对于 monokai 这样的前景色为浅色的高亮主题，可能会导致代码块看不清楚，就像下面这个样子
 
-![light-bg]({{ site.qnurl }}/media/upgrade-jekyll/light-bg.png){:.img-responsive}
+![light-bg]({{ site.qnurl }}/media/upgrade-jekyll/light-bg.png){:.img-fluid}
 
 坑爹啊！要修复这个问题，需要对之前生成的 `syntax.css` 做一点小改动，加入一行
 

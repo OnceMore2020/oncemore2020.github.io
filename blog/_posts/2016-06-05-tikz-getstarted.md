@@ -44,7 +44,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![single_line]({{ site.qnurl }}/media/tikz-getstarted/single_line.png){:.img-responsive}
+![single_line]({{ site.qnurl }}/media/tikz-getstarted/single_line.png){:.img-fluid}
 
 也可以顺序地连接多个点绘制折线或闭合多边形：
 
@@ -55,7 +55,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![multi_line]({{ site.qnurl }}/media/tikz-getstarted/multi_line.png){:.img-responsive}
+![multi_line]({{ site.qnurl }}/media/tikz-getstarted/multi_line.png){:.img-fluid}
 
 也可以在最后使用 `cycle` 避免重复输入起点。
 
@@ -68,7 +68,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![multi_stats]({{ site.qnurl }}/media/tikz-getstarted/multi_stats.png){:.img-responsive}
+![multi_stats]({{ site.qnurl }}/media/tikz-getstarted/multi_stats.png){:.img-fluid}
 
 
 ### 网格
@@ -82,7 +82,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![multi_stats]({{ site.qnurl }}/media/tikz-getstarted/help_grid.png){:.img-responsive}
+![multi_stats]({{ site.qnurl }}/media/tikz-getstarted/help_grid.png){:.img-fluid}
 
 其中 `help lines` 选项表示绘制的网格为辅助线，会变淡显示。
 
@@ -99,7 +99,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![scale]({{ site.qnurl }}/media/tikz-getstarted/scale.png){:.img-responsive}
+![scale]({{ site.qnurl }}/media/tikz-getstarted/scale.png){:.img-fluid}
 
 还可以使用 `xscale=` 和 `yscale=` 选项分别对X轴和Y轴进行缩放。
 
@@ -116,7 +116,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![arrow]({{ site.qnurl }}/media/tikz-getstarted/arrow.png){:.img-responsive}
+![arrow]({{ site.qnurl }}/media/tikz-getstarted/arrow.png){:.img-fluid}
 
 **控制线宽**:
 
@@ -134,7 +134,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 
 注意到多个选项之间用 `,` 隔开。
 
-![linewidth]({{ site.qnurl }}/media/tikz-getstarted/line_width.png){:.img-responsive}
+![linewidth]({{ site.qnurl }}/media/tikz-getstarted/line_width.png){:.img-fluid}
 
 **虚线和点划线**：
 
@@ -146,7 +146,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![dash_dot]({{ site.qnurl }}/media/tikz-getstarted/dash_dot.png){:.img-responsive}
+![dash_dot]({{ site.qnurl }}/media/tikz-getstarted/dash_dot.png){:.img-fluid}
 
 除了 `dashed` 和 `dotted`，可选的线型还包括 `densely dotted`、`loosely dotted`、`densely dashed` 和 `loosely dashed`。
 
@@ -174,7 +174,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \Huge white~\begin{tikzpicture}\draw [white, line width=0.5cm] (0,0) -- (1,0);\end{tikzpicture}
 ```
 
-![color]({{ site.qnurl }}/media/tikz-getstarted/color.png){:.img-responsive}
+![color]({{ site.qnurl }}/media/tikz-getstarted/color.png){:.img-fluid}
 
 **圆角**:
 
@@ -184,7 +184,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![rounded]({{ site.qnurl }}/media/tikz-getstarted/rounded.png){:.img-responsive}
+![rounded]({{ site.qnurl }}/media/tikz-getstarted/rounded.png){:.img-fluid}
 
 ### 更多形状
 
@@ -199,7 +199,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![shapes]({{ site.qnurl }}/media/tikz-getstarted/shapes.png){:.img-responsive}
+![shapes]({{ site.qnurl }}/media/tikz-getstarted/shapes.png){:.img-fluid}
 
 还可以绘制两点之间的曲线
 
@@ -211,7 +211,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 
 使用 `to` 替换 `--`，`out` 和 `in` 分别表示出射角和入射角。
 
-![curve]({{ site.qnurl }}/media/tikz-getstarted/curve.png){:.img-responsive}
+![curve]({{ site.qnurl }}/media/tikz-getstarted/curve.png){:.img-fluid}
 
 ### 绘制函数
 
@@ -226,7 +226,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![func]({{ site.qnurl }}/media/tikz-getstarted/func.png){:.img-responsive}
+![func]({{ site.qnurl }}/media/tikz-getstarted/func.png){:.img-fluid}
 
 注意到使用了 `plot` 语法，函数使用 `(\x, {function})` 语法，支持的常用函数包括 `factorial(\x)`、`sqrt(\x)`、`pow(\x, y)`、`exp(\x)`、`ln(\x)`、`log10(\x)`、`log2(\x)`、`abs(\x)`、`mod(\x,y)`、`round(\x)`、`floor(\x)`、`ceil(\x)`、`sin(\x)`、`cos(\x)`、`tan(\x)`、`min(\x,y)`、`max(\x,y)`、`rnd`，以及两个重要的常数 `e` 和 `pi`。注意到三角函数的参数有弧度和度两种方式，在参数后面加一个 `r` 表示使用弧度。
 
@@ -246,7 +246,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![fill]({{ site.qnurl }}/media/tikz-getstarted/fill.png){:.img-responsive}
+![fill]({{ site.qnurl }}/media/tikz-getstarted/fill.png){:.img-fluid}
 
 ### 标注
 
@@ -272,7 +272,7 @@ TikZ 默认的度量单位为厘米(cm)，语句中出现的数值一般是几�
 \end{tikzpicture}
 ```
 
-![label]({{ site.qnurl }}/media/tikz-getstarted/label.png){:.img-responsive}
+![label]({{ site.qnurl }}/media/tikz-getstarted/label.png){:.img-fluid}
 
 ## 进阶使用
 
@@ -302,7 +302,7 @@ TikZ 可以对单个`tikzpicture`环境定义样式
 \end{tikzpicture}
 ```
 
-![style]({{ site.qnurl }}/media/tikz-getstarted/style.png){:.img-responsive}
+![style]({{ site.qnurl }}/media/tikz-getstarted/style.png){:.img-fluid}
 
 
 ### 几何变换
@@ -320,7 +320,7 @@ TikZ 可以对单个`tikzpicture`环境定义样式
 \end{tikzpicture}
 ```
 
-![transform]({{ site.qnurl }}/media/tikz-getstarted/transform.png){:.img-responsive}
+![transform]({{ site.qnurl }}/media/tikz-getstarted/transform.png){:.img-fluid}
 
 
 ## 一点思考

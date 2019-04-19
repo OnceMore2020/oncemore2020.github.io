@@ -63,7 +63,7 @@ Markdown 最流行的标题分级方式是采用`#`符号(**类Atx形式**)，�
 
 ---
 
-![header-atx]({{ site.qnurl }}/media/markdown-in-action/header.PNG){:.img-responsive}
+![header-atx]({{ site.qnurl }}/media/markdown-in-action/header.PNG){:.img-fluid}
 
 ---
 
@@ -81,7 +81,7 @@ Markdown 最流行的标题分级方式是采用`#`符号(**类Atx形式**)，�
 
 ---
 
-![header-atx]({{ site.qnurl }}/media/markdown-in-action/header-setext.PNG){:.img-responsive}
+![header-atx]({{ site.qnurl }}/media/markdown-in-action/header-setext.PNG){:.img-fluid}
 
 ---
 
@@ -426,7 +426,7 @@ Markdown嵌入图片的方法和链接类似，也分为**行内式**和**参考
 
 ---
 
-![Vim][id]{:.img-responsive}
+![Vim][id]{:.img-fluid}
 
 [id]: /blog/media/markdown-in-action/vim.png "vim logo"
 

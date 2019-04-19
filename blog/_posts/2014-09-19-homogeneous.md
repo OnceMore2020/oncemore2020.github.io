@@ -15,7 +15,7 @@ tags: [CV]
 
 在欧式空间里，两条共面的平行线无法相交，然而在 **投影空间（Projective Space）** 内却不是这样，一个感性的理解是，如下图中的两条铁轨的间距随着视线变远而减小，直至在地平线处（无限远点）相交。
 
-![railway]({{ site.qnurl }}/media/homogeneous/railway.jpg){:.img-responsive .img-rounded}
+![railway]({{ site.qnurl }}/media/homogeneous/railway.jpg){:.img-fluid .rounded .mx-auto .d-block}
 
 欧式空间采用 $$(x,y,z)$$ 来表示一个三维点，但是无穷远点 $$(\infty,\infty,\infty)$$ 在欧式空间里是没有意义的，在投影空间中进行图形和几何运算并不是一个简单的问题，为了解决这个问题，数学家 August Ferdinand Möbius[^mobius] 提出了齐次坐标系，采用 $$N+1$$ 个量来表示 $$N$$ 维坐标。例如，在二维齐次坐标系中，我们引入一个量 $$w$$，将一个二维点 $$(x,y)$$ 表示为 $$(X,Y,w)$$ 的形式，其转换关系是
 
@@ -100,7 +100,7 @@ $$\bar{\textbf{x}}\cdot\tilde{l}=ax+by+c=0$$
 
 可将 $$\tilde{l}$$ 标准化为 $$l=(\hat{n}_x,\hat{n}_y,d)=(\hat{\textbf{n}},d),\parallel\hat{\textbf{n}}\parallel=1$$，$$\hat{\textbf{n}}$$ 称为 **法向量**，与直线 $$\tilde{l}$$ 垂直，$$d$$ 为原点到直线的距离，下图给出了比较形象的解释：
 
-![railway]({{ site.qnurl }}/media/homogeneous/2dline.png){:.img-responsive .img-rounded}
+![railway]({{ site.qnurl }}/media/homogeneous/2dline.png){:.img-fluid .rounded .mx-auto .d-block}
 
 采用齐次坐标系时，可求得两条直线的交点的齐次表达：
 

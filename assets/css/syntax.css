@@ -1,7 +1,7 @@
-pre[class='highlight'] {background-color:#000000;}
+pre[class='highlight'] {background-color:#333333;}
 code[class='highlighter-rouge'] {
-    background-color: #333333;
-    color: #00FF66;
+    background-color: #ffff99;
+    color: #333333;
     word-wrap: break-word;
 }
 .highlight table td { padding: 5px; }

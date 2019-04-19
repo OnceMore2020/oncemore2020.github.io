@@ -5,7 +5,6 @@ url:   https://oncemore.wang
 qnurl: http://cdn.oncemore.wang
 owner:
   name: OnceMore2020
-  weibo: 2615146412
 
 plugins:
   - jekyll-sitemap
@@ -25,3 +24,7 @@ kramdown:
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
+sass:
+  sass_dir: _sass
+  style: compressed

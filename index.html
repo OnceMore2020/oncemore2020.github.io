@@ -3,66 +3,34 @@ layout: default
 title: Home
 ---
 
-<div class="jumbotron">
+<div class="jumbotron" style="text-align:center">
   <h3>Build a better connected world</h3>
   <h4 class="lead"><s>全栈</s>溢栈工程师</h4>
 </div>
+
 <div class="container">
   <div class="row">
     <div class="col-md-6">
-      <div class="panel">
-        <div class="panel-heading">前排插播</div>
-        <div class="panel-body">
-          <ol>
-            <li><a href="http://www.3gpp.org/specifications/releases">3GPP Releases</a></li>
-            <li>Check the latest version of <a href="http://www.3gpp.org/ftp/specs/archive/38_series/">Release 15, 38 series</a></li>
-            <li>七牛云邀请链接：<a href="https://portal.qiniu.com/signup?code=3l89z3wn016c2">3l89z3wn016c2</a></li>
-          </ol>
-          <hr/>
-          <p>广告位洽谈请联系: <a href="https://github.com/OnceMore2020">OnceMore2020</a></p>
-        </div>
-      </div>
-      <div class="panel">
-        <div class="panel-heading">Blog</div>
-        <div class="panel-body">
-          <p>I write terribly.</p>
-          <p class="text-right"><a class="btn" href="/blog">View Featured Posts</a></p>
+      <div class="card">
+        <div class="card-header">Blog</div>
+        <div class="card-body">
+          <p class="lead text-right">I write terribly.</p>
+          <a href="/blog" class="btn btn-dark btn-sm">Featured Posts</a>
         </div>
       </div>
     </div>
     <div class="col-md-6">
-      <div class="panel">
-        <div class="panel-heading">Ruminations</div>
-        <div class="panel-body" id="app">
-          <p>A mind needs books as a sword needs a whetstone,</p>
-          <p>if it is to keep its edge.</p>
-          <p class="text-right"><a class="btn" href="/ruminations">View More</a></p>
+      <div class="card">
+        <div class="card-header">Ruminations</div>
+        <div class="card-body" id="app">
+          <blockquote class="blockquote text-right">
+            <p class="lead">A mind needs books as a sword needs a whetstone,</p>
+            <p class="lead">if it is to keep its edge.</p>
+            <footer class="blockquote-footer">Tyrion Lannister in <cite title="Source Title">A Song of Ice and Fire</cite></footer>
+          </blockquote>
+          <a class="btn btn-dark btn-sm" href="/ruminations">View More</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-<style>
-.jumbotron {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.panel {
-  border: 1px solid;
-}
-.panel-heading {
-  background: black;
-  color: white;
-}
-.btn {
-  border: 1px solid;
-  color: black;
-}
-.panel-body a {
-  color: black;
-}
-.panel-body a:hover {
-  text-decoration: none;
-}
-</style>

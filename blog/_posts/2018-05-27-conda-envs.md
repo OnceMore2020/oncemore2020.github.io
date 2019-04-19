@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Anaconda Environment 使用
-modified: 2018-05-27 00:34:02.017141
+modified: 2018-05-27
 tags: [Coding]
 feature: true
 description: 了解如何使用 Anaconda 的 Environment 特性创建、管理、配置 Python 环境。

@@ -27,13 +27,13 @@ description: 一次匪夷所思到触动了大家的被迫害妄想症的服务�
 11. 开始拷贝数据，以防万一出现数据丢失；
 12. 在拷贝数据的时候，再次查看网络配置信息，终于发现了端倪！
 `ip addr` 输出
-![]({{ site.qnurl }}/media/server-panic/ip_addr.png){:.img-responsive .img-rounded}
+![]({{ site.qnurl }}/media/server-panic/ip_addr.png){:.img-fluid .rounded .mx-auto .d-block}
 `ip route`输出
-![]({{ site.qnurl }}/media/server-panic/ip_route.png){:.img-responsive .img-rounded}
+![]({{ site.qnurl }}/media/server-panic/ip_route.png){:.img-fluid .rounded .mx-auto .d-block}
 这个 **192.168.1.1** 网关和 **192.168.1.200** 的地址，本能地 ping 网关，全中
-![]({{ site.qnurl }}/media/server-panic/ping_lan.png){:.img-responsive .img-rounded}
+![]({{ site.qnurl }}/media/server-panic/ping_lan.png){:.img-fluid .rounded .mx-auto .d-block}
 所以服务器当前一定是在另外一个子网当中！并且被分配了一个有效的子网 IP 地址，这个地址要不是被手动指定的，就是子网路由自动分配 DHCP 的。打开 [Arch Wiki - Network Configuration](https://wiki.archlinux.org/index.php/Network_configuration#Dynamic_IP_address) 查看所有可配置 DHCP 的方法，最后定位到 `dhcpcd.service`！
-![]({{ site.qnurl }}/media/server-panic/dhcpcd.png){:.img-responsive .img-rounded}
+![]({{ site.qnurl }}/media/server-panic/dhcpcd.png){:.img-fluid .rounded .mx-auto .d-block}
 原来有一个 `dhcpcd` 守护进程给服务器分配了子网地址！暴躁卸载掉 `dhcpcd`，重启，服务器正常上线！
 
 ## 故事开始

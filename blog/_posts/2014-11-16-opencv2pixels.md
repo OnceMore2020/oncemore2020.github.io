@@ -71,7 +71,7 @@ int main()
 
 运行结果如下：
 
-![saltimage]({{ site.qnurl }}/media/opencv2scan/saltimage.jpg){:.img-responsive .img-rounded}
+![saltimage]({{ site.qnurl }}/media/opencv2scan/saltimage.jpg){:.img-fluid .rounded .mx-auto .d-block}
 
 下面对一些细节加以说明。
 
@@ -185,7 +185,7 @@ void colorReduce(cv::Mat &image, int div=64) {
 
 运行结果(N=64):
 
-![reducedimage]({{ site.qnurl }}/media/opencv2scan/reducedimage.jpg){:.img-responsive .img-rounded}
+![reducedimage]({{ site.qnurl }}/media/opencv2scan/reducedimage.jpg){:.img-fluid .rounded .mx-auto .d-block}
 
 -------
 
@@ -376,7 +376,7 @@ duration /= cv::getTickFrequency();
 
 采用一幅大图(2500x1700)的彩色图像测试，各个方法对比结果如下(把计时结果乘以1000以便对比，即单位为ms)：
 
-![]({{ site.qnurl }}/media/opencv2scan/perf.png){:.img-responsive .img-rounded}
+![]({{ site.qnurl }}/media/opencv2scan/perf.png){:.img-fluid .rounded .mx-auto .d-block}
 
 > 相同组合在不同对比实验中都有些差异，是因为我每个对比中分别只实验了一次，没有进行多次实验取平均值，没必要。
 

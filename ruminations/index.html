@@ -14,9 +14,7 @@ title: Ruminations
       <p class="text-right"><small>{{ quoteby }},</small></p>
       <p class="text-right"><small>{{ book }}</small></p>
     </div>
-    <ul class="pager">
-      <li><a v-on:click="updateIdx" href="#">Next</a></li>
-    </ul>
+    <div class="d-flex justify-content-center"><a v-on:click="updateIdx" class="btn btn-sm btn-dark" href="#">Next</a></div>
   {% endraw %}
 </div>
 <script>
@@ -46,11 +44,3 @@ title: Ruminations
     }
   })
 </script>
-
-<style>
-.jumbotron {
-  background-color: #ffffcc;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-</style>

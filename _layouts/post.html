@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh" class="han-init">
 <head>
   {% include head.html %}
 </head>
   {% include nav.html %}
-<body id="post-context">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-3 hidden-xs">
-        <div id="toc"></div>
-      </div>
-      <div class="col-sm-7 col-xs-12">
-        <h1>{{ page.title }}</h1>
-        <small>Last Updated At: {{ page.modified|date:"%Y-%m-%d" }}</small>
-        <hr>
-        <article>
-        {{ content }}
-        </article>
-        <hr>
-        <div id="disqus_thread" class="cmt"></div>
-      </div>
-    </div>
+<body>
+  <div class="container">
+    <article>
+    <h1>{{ page.title }}</h1>
+    <small>最后编辑于: {{ page.modified|date:"%Y-%m-%d" }}</small>
+    <hr>
+    {{ content }}
+    </article>
+    <div class="d-flex justify-content-center">(全文完)</div>
+    <hr>
+    <div id="disqus_thread" class="cmt"></div>
   </div>
   {% include footer.html %}
 </body>
@@ -37,29 +31,4 @@
     (d.head || d.body).appendChild(s);
   })();
 </script>
-<script src="//cdn.bootcss.com/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
-<script>
-  $(function() {
-      var toc = $("#toc").tocify({
-      selectors: "h2, h3, h4"
-    }).data("toc-tocify");
-    $(".optionName").popover({
-      trigger: "hover"
-    });
-  });
-</script>
-<style>
-#post-context a {
-  color: black;
-}
-.active {
-  background-color: #333333;
-}
-#toc .active a {
-  color: white;
-}
-#toc .active a:hover {
-  background-color: #333333;
-}
-</style>
 </html>
